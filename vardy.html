@@ -13,7 +13,7 @@
 <body>
    <div class="wrapper">
     <header>
-        <div id="backtologo"><img src="images/vardylogo.JPG" alt="peter vardy logo">
+        <div id="backtologo"><a href=""><img src="images/vardylogo.JPG" alt="peter vardy logo"></a>
         </div>
         <div class="nav">
             <ul>
@@ -21,21 +21,25 @@
                 <li><a href="">Find a Vehicle</a></li>
                 <li><a href="">Sell My Car</a></li>
                 <li><a href="">Service &amp; MOT</a></li>
-                <li><a href="">About Us</a></li><li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li><li class="last"><a href="">Contact Us</a></li>
             </ul>
         </div>
         <div id="contact">
            <ul>
-               <li id="telephone">0333 456 0505</li>
-               <li id="contactinfo">Local call rate Opening hours</li>
+               <li id="telephone"><i class="fa fa-phone" aria-hidden="true"></i> <strong>0333 456 0505</strong></li>
+               
+               <li id="contactinfo"><span class="left">Local call rate <i class="fa fa-info-circle" aria-hidden="true"></i></span><span class="right">Opening Hours <i class="fa fa-angle-down" aria-hidden="true"></i></span></li>
            </ul>
         </div>
     </header>
+    </div>
     <main>
         <div id="banner">
-            <div>Price promise on all vehicles</div>
-            <div>Our customers rate us 5/5</div>
-            <div>Instant Finance Decision</div>
+           <div class="wrapper">
+               <div><a href="">Price promise on all vehicles</a></div>
+               <div class="second"><a href="">Our customers rate us 5/5</a></div>
+               <div class="third"><a href="">Instant Finance Decision</a></div>
+            </div>
         </div>
         <div id="carouseloffers">
             <ul>
@@ -45,37 +49,52 @@
             </ul>
         </div>
         <div id="carmakes">
+           <div class="wrapper">
             <ul>
                 <li><a href="">Vauxhall</a></li>
                 <li><a href="">Carstore</a></li>
                 <li><a href="">BMW</a></li>
                 <li><a href="">MINI</a></li>
                 <li><a href="">Jaguar</a></li>
+            </ul>
+            <ul>
                 <li><a href="">Land Rover</a></li>
                 <li><a href="">Vans</a></li>
                 <li><a href="">Heritage</a></li>
                 <li><a href="">Porsche</a></li>
                 <li><a href="">Motability</a></li>
             </ul>
+            </div>
         </div>
         <div id="infopanels">
+           <div class="wrapper">
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=QXaMXs-15ns"><img         src="images/whychooseus.JPG" alt="why choose us youtube video"></a>
-                <h3>Why Choose Us</h3>
+                <li><div><a href="https://www.youtube.com/watch?v=QXaMXs-15ns"><img         src="images/whychooseus.JPG" alt="why choose us youtube video"></a></div>
+                <div class="info">
+                <h3>Why Choose Us?</h3>
                 <p>Our vision is to create the world's best motor retail operation as measured by our partners, guests and communities in which we serve. We strive to provide excellent customer service and 9/10 of our customers said that they would recommend us to their family or friends.</p>
-                <button>Our Vision</button>    
+                <button>Our Vision</button>
+                    </div>    
                 </li>
-                <li>
-                    <img src="images/petervardycarstore.JPG" alt="explore peter vardy carstore">
+                <li><div><a href="">
+                    <img src="images/petervardycarstore.JPG" alt="explore peter vardy carstore"></a>
+                    </div>
+                    <div class="info two">
                     <h3>Peter Vardy CarStore Dundee...</h3>
                     <p>Enjoy a car buying experience like no other! Our huge used car supermarket has over 500 quality used cars under one roof with massive savings of up to 60%. Browse offers online today.</p>
                     <button>Find Out More</button>
+                    </div>
                 </li>
-                <li><img src="images/onechild.JPG" alt="buy a car help a child">
+                <li><div><a href=""><img src="images/onechild.JPG" alt="buy a car help a child"></a>
+                   </div>
+                   <div class="info three">
                     <h3>One Child</h3>
                     <p>Buy a car, help a child. When you buy a new or used car, or have your car serviced at Peter Vardy, you give a child a chance to go to school. In uniform. With food in their stomachs. And an exercise book on their desk. In short you hive a child a chance.</p>
-                    <button>Find out More</button></li>
+                    <button>Find out More</button>
+                    </div>
+                    </li>
             </ul>
+            </div>
         </div>
         <div id="news">
             <h3>What's new</h3>
@@ -177,6 +196,6 @@
         </div>
         <div id="awards"><img src="images/awards.JPG" alt="award logos">Designed and Developed by mtc.</div>
     </footer>
-    </div>
+    
 </body>
 </html>
