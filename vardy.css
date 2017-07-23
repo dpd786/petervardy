@@ -19,11 +19,11 @@ ul {
     display: inline-block;
 }
 li {
-    display: inline-block
+    display: inline-block;
 }
 a {
     text-decoration: none;
-    display: block
+    display: block;
 }
 /************* HEADER **************/
 /***********************************/
@@ -113,7 +113,10 @@ header ul a {
 }
 #banner .wrapper > div {
     display: inline-block;
-    width: 33%;
+    margin-right: 100px;
+}
+#banner .wrapper > div:last-child {
+    margin-right: 0;
 }
 #banner .second {
     text-align: center;
@@ -124,7 +127,27 @@ header ul a {
 #banner a {
     color: #fff;
     display: inline;
-    padding: 2px;
+    padding: 10px 2px;
+}
+#banner span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 115%;
+    background: #09b7fb;
+    margin-right: 5px;
+}
+#banner img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#banner .third img {
+    position: relative;
+    bottom: 4px;
 }
 
 /************CARMAKES*************/
@@ -157,7 +180,16 @@ header ul a {
     box-shadow: 0 0 2px grey;
     overflow: hidden;
     border-radius: 10px;
-    margin-right: 30px
+    vertical-align: top;
+    height: 450px;
+    position: relative;
+    margin-right: 36px;
+}
+#infopanels li:last-child {
+    margin: 0;
+}
+#infopanels li div:first-child {
+    border-radius: 10px 10px 0 0;
 }
 #infopanels .info {
     padding: 0 25px 0 20px;
@@ -165,12 +197,256 @@ header ul a {
     line-height: 1.5;
 }
 #infopanels .info h3 {
-    font-size: 145%
+    font-size: 150%;
 }
-#infopanels li:nth-child(2) {
-    padding-bottom: 40px
+#infopanels button {
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    background: #00ace1;
+    font-size: 125%;
+    font-weight: 800;
+    padding: 6px 15px 10px;
+    border-style: none;
+    border-radius: 5px;
 }
-#infopanels li:last-child {
-    padding-bottom: 18px;
+#infopanels .fa-angle-right {
+    font-size: 150%;
+    font-weight: 800;
+    position: relative;
+    top: 2px;
+    padding-left: 30px;
+}
+
+/**************WHAT'S NEW**************/
+/*************************************/
+
+#news  {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d8d8d8;
+}
+#news h3 {
+    text-align: center;
+    color: #3d383a;
+}
+#news li {
+    margin-right: 12px;
+    display: inline-block;
+}
+#news li:last-child {
     margin-right: 0;
+}
+#news li div:first-child a {
+    display: inline;
+    color: #fff;   
+}
+#news li div:first-child {
+    display: inline-block;
+    font-size: 75%;
+    color: #fff;
+    background: #424345;
+    padding: 7px 16px 5px 15px;
+    border-left: 1px solid #fff;
+}
+#news li:last-child div:first-child {
+    background: none;
+}
+
+/**************INFOVARDY****************/
+/*************************************/
+
+#infovardy {
+    padding: 40px 0;
+    font-size: 75%;
+    color: #37383a;
+}
+#infovardy div:last-child {
+    width: 56%;
+    padding: 0 30px;
+}
+#infovardy div {
+    display: inline-block;
+    vertical-align: top;
+}
+#infovardy p {
+    line-height: 160%;
+    word-spacing: 2px;
+}
+#infovardy h1 {
+    margin-top: 0;
+    font-size: 230%;
+}
+
+/**************MEDIA******************/
+/*************************************/
+
+#media {
+    background: #f0f2f4;
+    color: #37383a;
+    padding: 26px 0;
+}
+#media ul {
+    display: block;
+}
+#media li {
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    order-right: 1px solid #b2b2b2;  
+}
+#media li a {
+    display: inline;
+    color: #37383a;
+}
+#media #mediaicons li {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 130%;
+    margin: 5px;
+}
+#media #mediaicons a {
+    color: #f0f2f3;
+    display: block;
+}
+#mediaicons .facebook {
+    background: #5d779f;
+}
+#mediaicons .twitter {
+    background: #74add1;
+}
+#mediaicons .youtube {
+    background: #c75557;
+}
+#mediaicons .instagram {
+    background: #3e759d;
+}
+#mediaicons .linkedin {
+    background: #3090c1;
+}
+#media #seewhy {
+    border-bottom: 1px solid #37383a;
+}
+#media p {
+    font-size: 90%;
+}
+#media h4 {
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+#media li:last-child div:last-child {
+    padding: 10px 0;
+}
+#media input {
+    border: none;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+    width: 50%;
+}
+#media button {
+    background: green;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    background: #03b075;
+    font-weight: 600;
+}
+
+/**************FOOTER******************/
+/*************************************/
+
+footer {
+    background: #1e1d1d;
+    color: #cbcbcb;
+    padding: 30px 0 50px 0;
+    font-size: 80%;
+}
+footer .wrapper > div {
+    display: inline-block;
+}
+footer a {
+    color: #cbcbcb;
+}
+#companyaddress {
+    padding-right: 200px;
+    padding-bottom: 20px;
+}
+#companyaddress ul li:last-child {
+    padding-top: 110px
+}
+footer ul {
+    display: inline-block; 
+    vertical-align: top;
+    padding-right: 25px;
+}
+footer #footerlinks {
+    vertical-align: top;
+}
+footer #footerlinks > div {
+    display: inline-block;
+    padding: 15px 80px 15px 0;
+}
+footer #footerlinks > div:last-child {
+    padding-right: 0;
+}
+#footerlinks h3 {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 150%;
+    position: relative;
+    padding-bottom: 10px;
+}
+#footerlinks h3:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #79707c;
+}
+footer li {
+    display: block;
+    line-height: 160%;
+}
+footer #footerlinks li {
+    padding-bottom: 5px;
+}
+footer #privacy li {
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+}
+footer #privacy li:last-child {
+    padding-left: 15px;
+}
+footer #cookies:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 70%;
+    background: #fff;
+    top: 15%;
+    right: 0;
+}
+footer #awards {
+    text-align: right;
+    display: block;
+}
+footer #awards ul {
+    padding: 0;
+}
+footer #awards li {
+    display: inline-block;
+}
+footer #awards p {
+    position: relative;
+    bottom: 18px;
+    left: 5px;   
+    margin: 0;
 }
