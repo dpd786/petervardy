@@ -5,20 +5,51 @@
     <title>Peter Vardy</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="normalize.css">
      <link rel="stylesheet" href="vardy.css">
 </head>
 <body>
-   <div class="wrapper">
-    <header>
+  <div class="wrapper">
+   <header>
         <div id="backtologo"><a href=""><img src="images/vardylogo.JPG" alt="peter vardy logo"></a>
         </div>
         <div class="nav">
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">Find a Vehicle</a></li>
+                <li class="dropdown"><a href="">Find a Vehicle</a>
+                   <ul class="arrow-up"><li></li></ul>
+                    <ul id="drop-content">
+                      <li><a href=""><img src="images/navfindsubimg.JPG" alt=""></a></li>
+                      <li class="navfind">
+                          <ul>
+                              <li><h4>New</h4></li>
+                              <li><a href="">Vauxhall</a></li>
+                              <li><a href="">BMW</a></li>
+                              <li><a href="">MINI</a></li>
+                          </ul>
+                          <ul>
+                              <li><h4>Used</h4></li>
+                              <li><a href="">Vauxhall</a></li>
+                              <li><a href="">BMW</a></li>
+                              <li><a href="">MINI</a></li>
+                          </ul>
+                          <ul>
+                              <li><h4>Offers</h4></li>
+                              <li><a href="">Vauxhall Offers</a></li>
+                              <li><a href="">CarStore Offers</a></li>
+                              <li><a href="">BMW Offers</a></li>
+                          </ul>
+                          <ul class="last">
+                              <li><h4>Franchises</h4></li>
+                              <li><a href="">Vauxhall</a></li>
+                              <li><a href="">CarStore</a></li>
+                              <li><a href="">BMW</a></li>
+                          </ul>                          
+                      </li>
+                    </ul>
+                </li>
                 <li><a href="">Sell My Car</a></li>
                 <li><a href="">Service &amp; MOT</a></li>
                 <li><a href="">About Us</a></li><li class="last"><a href="">Contact Us</a></li>
@@ -26,13 +57,30 @@
         </div>
         <div id="contact">
            <ul>
-               <li id="telephone"><i class="fa fa-phone" aria-hidden="true"></i> <strong>0333 456 0505</strong></li>
-               
-               <li id="contactinfo"><span class="left">Local call rate <i class="fa fa-info-circle" aria-hidden="true"></i></span><span class="right">Opening Hours <i class="fa fa-angle-down" aria-hidden="true"></i></span></li>
+               <li id="telephone"><span><i class="fa fa-phone" aria-hidden="true"></i> <strong>0333 456 0505</strong></span></li>      
+               <li id="contactinfo"><span class="left">Local call rate <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+               <span class="right">Opening Hours <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+               <ul id="openhours">
+                   <ul>
+                       <li>Day</li>
+                       <li>Monday - Thursday</li>
+                       <li>Friday</li>
+                       <li>Saturday</li>
+                       <li>Sunday</li>
+                   </ul>
+                   <ul>
+                       <li>Enquiries</li>
+                       <li>08:00 to 21:00</li>
+                       <li>08:00 to 18:00</li>
+                       <li>08:00 to 18:00</li>
+                       <li>10:00 to 17:00</li>
+                   </ul>
+               </ul>
+               </li>
            </ul>
         </div>
     </header>
-    </div>
+  </div>
     <main>
         <div id="banner">
            <div class="wrapper">
@@ -41,12 +89,18 @@
                <div class="third"><a href=""><img src="images/bannercarmoney.JPG"> Instant Finance Decision</a></div>
             </div>
         </div>
-        <div id="carouseloffers">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+        <div class="mainSlider">
+           <ul class="slides">
+                <li class="slide"><img src="images/mainimg1.JPG" alt="car image"></li>
+                <li class="slide"><img src="images/mainimg2.JPG" alt="car image"></li>
+                <li class="slide"><img src="images/mainimg3.JPG" alt="car image"></li>
+                <li class="slide"><img src="images/mainimg1.JPG" alt="car image"></li>
             </ul>
+        </div>
+        <div class="dots">
+            <div class="dot"><span class="s active"></span></div>
+            <div class="dot"><span class="s"></span></div>
+            <div class="dot"><span class="s"></span></div>
         </div>
         <div class="wrapper">
             <div id="carmakes">
@@ -232,6 +286,8 @@
             </ul>
         </div>
         </div>
-    </footer>   
+    </footer>  
+    
+<script src="vardy.js"></script> 
 </body>
 </html>
