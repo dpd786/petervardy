@@ -272,29 +272,31 @@ header ul a:hover {
 /* MAIN SLIDER        */
 /* -------------------- */
 
-.mainSlider {
+#mainSlider {
     overflow: hidden;
+    width: 100%;
+    height: 440px;
 }
-.mainSlider .slide {
-    display: block;
-}
-.mainSlider .slides {
+#mainSlider .slides {
     padding: 0;
     margin: 0;
-    width: 400%;
+    width: 900%;
+    height: 440px;
+    display: block;
 }
-.mainSlider .slide {
+#mainSlider .slide {
     float: left;
     list-style: none;
-    width: 25%;
+    width: 11.111111%;
+    height: 440px;
     background-size: cover;
 }
-.mainSlider img {
+#mainSlider img {
   display: block;
   height: 100%;
   width: 100%;
 }
-.mainSlider:after {
+#mainSlider:after {
   content: "";
   display:block;
   clear: both;
@@ -309,11 +311,11 @@ header ul a:hover {
     cursor: pointer;
 }
 .s {
-  display: inline-block;
-  width: 16px;
-  border-radius: 5px;
-  background-color: #ddd;
-  padding: 4px;
+    display: inline-block;
+    width: 16px;
+    border-radius: 5px;
+    background-color: #ddd;
+    padding: 4px;
     transition: background-color 0.3s ease;
 }
 .dot:hover span {
@@ -334,13 +336,13 @@ header ul a:hover {
 }
 #carmakes ul {
     display: block;
-    margin-bottom: 4px;
 }
 #carmakes li {
     width: 19.7%;
     text-align: center;
     background: #37383a;
     padding: 50px 0;
+    margin: 2px 0;
 }
 #carmakes a {
     color: #fff;
