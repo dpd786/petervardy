@@ -381,6 +381,7 @@ figure {
 }
 #infopanels .info h3 {
     font-size: 150%;
+    position: relative;
 }
 #infopanels button {
     position: absolute;
@@ -389,9 +390,18 @@ figure {
     background: #00ace1;
     font-size: 125%;
     font-weight: 800;
-    padding: 6px 15px 10px;
     border-style: none;
     border-radius: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+#infopanels button span {
+    position: relative;
+}
+#infopanels button a {
+    color: #fff;
+    display: block;
+    padding: 6px 15px 10px;
 }
 #infopanels .fa-angle-right {
     font-size: 150%;
@@ -399,6 +409,22 @@ figure {
     position: relative;
     top: 2px;
     padding-left: 30px;
+}
+#infopanels button .beforeButton {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 0;
+    border-radius: 5px !important;
+    background: #0099c8;
+    transition: 0.3s;
+}
+#infopanels button:hover .beforeButton {
+    left: 0%;
 }
 
 /**************WHAT'S NEW**************/
