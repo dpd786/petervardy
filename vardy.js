@@ -76,7 +76,7 @@ $(document).ready(function () {
         
     });
 
-    //$sliderMain.on("mouseenter", stopSliderMain).on("mouseleave", startSliderMain);
+    $sliderMain.on("mouseenter", stopSliderMain).on("mouseleave", startSliderMain);
 
     startSliderMain();
 
