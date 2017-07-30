@@ -71,9 +71,7 @@ $(document).ready(function () {
         move = $dotind - currentSlideMain;
         currentSlideMain = $dotind;
         $slideContainerMain.animate({marginLeft: '-=' + (move * widthMain) + '%'});
-        //nextButton(currentSlideMain);
         startSliderMain();
-        
     });
 
     $sliderMain.on("mouseenter", stopSliderMain).on("mouseleave", startSliderMain);
