@@ -34,23 +34,24 @@ header > div {
     display: inline-block;
 }
 header img {
-    padding: 20px 0;
+    padding: 20px 0 20px 10px;
 }
 header ul a {
     color: #5f6061;
     font-weight: bold;
-    padding: 5px 14px;
+    padding: 5px 8px;
 }
 .nav {
     position: absolute;
     top: 32px;
     padding: 0 20px;
+    font-size: 15px;
 }
 .nav li {
     position: relative;
     padding-bottom: 36px;
 }
-.nav > ul > li a:after {
+.nav > ul > li > a:after {
     content: "";
     position: absolute;
     top: 4px;
@@ -67,7 +68,7 @@ header ul a {
     z-index: 10;
     display: none;
     position: absolute;
-    top: 64px;
+    top: 58px;
     left: -305px;
     width: 1190px;
     padding: 0;
@@ -116,7 +117,7 @@ header ul a {
     width: 0;
     height: 0;
     left: 55px;
-    bottom: -1px;
+    bottom: 1px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 12px solid #d8d8d8;
@@ -132,15 +133,16 @@ header ul a {
     font-size: 100%;
     font-weight: 400;
 }
-#contact li {
-    display: block;
-    text-align: right;
-    padding: 2px 0;
-}
 #contact {
     position: absolute;
     top: 25px;
     right: 0;
+    padding-right: 10px;
+}
+#contact li {
+    display: block;
+    text-align: right;
+    padding: 2px 0;
 }
 #telephone span  {
     color: #00ace1;
@@ -159,11 +161,11 @@ header ul a {
     position: relative;
 }
 #contactinfo .right {
-    margin-left: 8px;
     padding: 6px;
 }
 #contactinfo .fa-info-circle {
     font-size: 105%;
+    padding-right: 5px;
 }
 #contactinfo .fa-info-circle:after {
     content: "";
@@ -696,14 +698,35 @@ footer #awards p {
 /*******MEDIA QUERIES******/
 /**************************/
 
-@media screen and (max-width: 1220px) {
-    .nav {
-        position: static;
-        left: -240px;
-        padding-bottom: 10px;
-    }
+@media screen and (max-width: 1080px) {
     #backtologo {
         position: static;
         padding-left: 10px;
+    }
+    .nav {
+        position: static;
+        display: block;
+        padding: 0 10px;
+    }
+    .nav li {
+        padding-bottom: 10px;
+    }
+    .nav > ul > li a:after {
+        top: 6px;
+        height: 40%;
+    }
+    #contact {
+        padding-right: 10px;
+    }
+    #contactinfo span {
+        display: block;
+    }
+    #contactinfo .fa-info-circle:after {
+        content: "";
+        background: none;
+    }
+    #openhours {
+        left: -180px;
+        right: 5px;
     }
 }
