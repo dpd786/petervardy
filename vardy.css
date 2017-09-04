@@ -340,11 +340,13 @@ header ul a:hover {
 #carmakes li {
     width: 19.7%;
     text-align: center;
-    background: #37383a;
+    background: url(images/carmakesimg.JPG) no-repeat center;
+    transform: scale(1.05);
     padding: 50px 0;
     margin: 2px 0;
+    transition: transform 0.3s;
     position: relative;
-    verflow: hidden;
+    overflow: hidden;
 }
 #carmakes a {
     color: #fff;
@@ -380,6 +382,10 @@ header ul a:hover {
 .slidingshadow:hover {
     top: -60%;
     left: -10%;
+}
+
+#carmakes li:hover {
+    transform: scale(0.9);
 }
 
 /*************INFOPANELS************/
@@ -696,7 +702,7 @@ footer #awards p {
 /*******MEDIA QUERIES******/
 /**************************/
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1180px) {
     .nav {
         position: static;
         left: -240px;
