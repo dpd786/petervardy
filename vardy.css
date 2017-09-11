@@ -46,6 +46,7 @@ header ul a {
 }
 .nav {
     padding: 0 20px;
+    font-size: 16px;
 }
 .nav ul {
     line-height: 100px;
@@ -62,7 +63,7 @@ header ul a {
     display: block;
     clear: both;
 }
-.nav > ul > li a:after {
+.nav > ul > li > a:after {
     content: "";
     position: absolute;
     top: 40px;
@@ -135,7 +136,7 @@ header ul a {
     width: 0;
     height: 0;
     left: 55px;
-    bottom: -1px;
+    bottom: 1px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 12px solid #d8d8d8;
@@ -154,6 +155,7 @@ header ul a {
 #contact {
     float: right;
     margin-top: 20px;
+    padding-right: 10px;
 }
 #contact li {
     display: block;
@@ -177,11 +179,11 @@ header ul a {
     position: relative;
 }
 #contactinfo .right {
-    margin-left: 8px;
     padding: 6px;
 }
 #contactinfo .fa-info-circle {
     font-size: 105%;
+    padding-right: 5px;
 }
 #contactinfo .fa-info-circle:after {
     content: "";
@@ -730,14 +732,35 @@ footer #awards p {
 /*******MEDIA QUERIES******/
 /**************************/
 
-@media screen and (max-width: 1180px) {
-    .nav {
-        position: static;
-        left: -240px;
-        padding-bottom: 10px;
-    }
+@media screen and (max-width: 1080px) {
     #backtologo {
         position: static;
         padding-left: 10px;
+    }
+    .nav {
+        position: static;
+        display: block;
+        padding: 0 20px;
+    }
+    .nav li {
+        padding: 0 5px 10px;
+    }
+    .nav > ul > li a:after {
+        top: 5px;
+        height: 45%;
+    }
+    #contact {
+        padding-right: 10px;
+    }
+    #contactinfo span {
+        display: block;
+    }
+    #contactinfo .fa-info-circle:after {
+        content: "";
+        background: none;
+    }
+    #openhours {
+        left: -180px;
+        right: 5px;
     }
 }
