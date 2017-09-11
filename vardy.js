@@ -11,7 +11,7 @@ $(document).ready(function () {
     
     $("#contactinfo .right").on('click', function () {
         $(".right .fa-angle-down").toggleClass("rotateLinkInHeader");
-        $("#contact #openhours").slideToggle(500);
+        $("#contact #openhours").slideToggle(300);
     });
     
     /* MAIN SLIDES ANIMATION FOR MOBILE */
